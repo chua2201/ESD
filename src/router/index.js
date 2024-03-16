@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -42,32 +43,7 @@ const router = createRouter({
             name: 'bookpilates',
             component: () => import('../views/BookPilates.vue')
 
-        },
-         {
-            path: '/profile',
-            name: 'profile',
-            component: () => import('../views/ProfileDefaultPage.vue')
-          },
-          {
-              path: '/profileEditInfo',
-              name: 'profileEditInfo',
-              component: () => import('../views/ProfileEditInfoPage.vue')
-          },
-          {
-            path: '/profileBookings',
-            name: 'profileBookings',
-            component: () => import('../views/ProfileBookingsPage.vue')
-          },
-          {
-              path: '/profileRefer',
-              name: 'profileRefer',
-              component: () => import('../views/ProfileReferPage.vue')
-          },
-          {
-              path: '/profileLogout',
-              name: 'profileLogout',
-              component: () => import('../views/ProfileLogoutPage.vue')
-          },
+        }
     ]
 })
 
